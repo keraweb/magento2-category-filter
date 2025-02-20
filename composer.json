@@ -1,0 +1,16 @@
+{
+  "name": "php-cuong/magento2-category-filter",
+  "description": "magento 2 - Add the ability to mass update the products categories, in the product grid.",
+  "type": "magento2-module",
+  "authors": [
+    {
+      "name": "php-cuong"
+    }
+  ],
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "PHPCuong\\CatalogSearch\\": ""
+    }
+  }
+}
