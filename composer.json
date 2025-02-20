@@ -1,5 +1,5 @@
 {
-  "name": "php-cuong/magento2-category-filter",
+  "name": "keraweb/magento2-category-filter",
   "description": "magento 2 - Add the ability to mass update the products categories, in the product grid.",
   "type": "magento2-module",
   "authors": [
