@@ -49,10 +49,10 @@ class Category extends \Magento\Ui\Component\Listing\Columns\Column
     public function __construct(
         ContextInterface $context,
         UiComponentFactory $uiComponentFactory,
+        ProductCategoryList $productCategory,
+        CategoryRepositoryInterface $categoryRepository,
         array $components = [],
-        array $data = [],
-        ProductCategoryList $productCategory = null,
-        CategoryRepositoryInterface $categoryRepository = null
+        array $data = []
     ) {
         parent::__construct($context, $uiComponentFactory, $components, $data);
         $this->productCategory = $productCategory;
