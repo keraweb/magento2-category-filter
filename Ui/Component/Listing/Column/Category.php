@@ -21,18 +21,20 @@
 
 namespace PHPCuong\CatalogSearch\Ui\Component\Listing\Column;
 
+use Magento\Catalog\Model\ProductCategoryList;
+use Magento\Catalog\Api\CategoryRepositoryInterface;
 use Magento\Framework\View\Element\UiComponentFactory;
 use Magento\Framework\View\Element\UiComponent\ContextInterface;
 
 class Category extends \Magento\Ui\Component\Listing\Columns\Column
 {
     /**
-     * @var \Magento\Catalog\Model\ProductCategoryList
+     * @var ProductCategoryList
      */
     private $productCategory;
 
     /**
-     * @var \Magento\Catalog\Api\CategoryRepositoryInterface
+     * @var CategoryRepositoryInterface
      */
     private $categoryRepository;
 
@@ -49,8 +51,8 @@ class Category extends \Magento\Ui\Component\Listing\Columns\Column
         UiComponentFactory $uiComponentFactory,
         array $components = [],
         array $data = [],
-        \Magento\Catalog\Model\ProductCategoryList $productCategory,
-        \Magento\Catalog\Api\CategoryRepositoryInterface $categoryRepository
+        ProductCategoryList $productCategory = null,
+        CategoryRepositoryInterface $categoryRepository = null
     ) {
         parent::__construct($context, $uiComponentFactory, $components, $data);
         $this->productCategory = $productCategory;
